@@ -1,310 +1,1059 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)file:///C:/Users/user/Downloads/online_viewer_net%20(54).htm -->
-<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Hats! 전체 문장 필사 연습장</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-        body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.5; padding: 20px; background-color: #f8f9fa; color: #333; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
-        h1 { text-align: center; color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; margin-bottom: 40px; }
-        .page-num { font-size: 0.9em; color: #3498db; font-weight: bold; margin-top: 50px; border-left: 4px solid #3498db; padding-left: 10px; }
-        
-        .sentence-group { margin-bottom: 45px; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
-        .original-box { background-color: #f1f8ff; padding: 10px 15px; border-radius: 5px; margin-bottom: 20px; }
-        .eng-orig { font-size: 1.2em; font-weight: bold; color: #000; }
-        .kor-orig { font-size: 1em; color: #555; margin-top: 5px; }
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가온중학교 2학년 기말고사 대비 안내</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b35;
+    --navy-mid: #17305e;
+    --blue: #1e50c8;
+    --blue-soft: #e8eeff;
+    --teal: #0e7490;
+    --teal-soft: #e0f5f9;
+    --amber: #d97706;
+    --amber-soft: #fef3c7;
+    --red: #b91c1c;
+    --red-soft: #fee2e2;
+    --green: #15803d;
+    --green-soft: #dcfce7;
+    --purple: #6d28d9;
+    --purple-soft: #ede9fe;
+    --bg: #f5f4f0;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --text: #1a1a2e;
+    --text-mid: #3d3d55;
+    --text-light: #7a7a9a;
+    --shadow: 0 2px 16px rgba(13,27,53,0.07);
+    --shadow-lg: 0 8px 40px rgba(13,27,53,0.12);
+  }
 
-        .writing-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; }
-        .column-title { font-size: 0.85em; color: #888; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
-        
-        .trace-line { font-size: 1.1em; color: #e0e0e0; border-bottom: 1px solid #ddd; padding: 5px 0; min-height: 1.2em; letter-spacing: 1px; }
-        .blank-line { border-bottom: 1.5px solid #333; height: 35px; margin-bottom: 15px; }
-        
-        .label-tag { font-size: 0.75em; background: #eee; padding: 2px 6px; border-radius: 3px; color: #666; margin-right: 5px; }
+  * { margin:0; padding:0; box-sizing:border-box; }
 
-        @media print {
-            body { background: white; padding: 0; }
-            .container { box-shadow: none; width: 100%; }
-            .sentence-group { page-break-inside: avoid; }
-        }
-    </style>
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 14.5px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(140deg, #0d1b35 0%, #17305e 55%, #1a4080 100%);
+    padding: 60px 32px 52px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top:-100px; right:-60px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(30,80,200,0.25) 0%, transparent 70%);
+  }
+  .hero::after {
+    content: '';
+    position: absolute; bottom:-80px; left:30%;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(217,119,6,0.18) 0%, transparent 70%);
+  }
+
+  .hero-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative; z-index:1;
+  }
+
+  .hero-eyebrow {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 18px;
+  }
+  .badge {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; padding: 4px 12px; border-radius: 4px;
+  }
+  .badge-gold {
+    background: rgba(217,119,6,0.25);
+    border: 1px solid rgba(217,119,6,0.5);
+    color: #fbbf24;
+  }
+  .badge-white {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+  }
+
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(24px, 3.8vw, 36px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  .hero-sub {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 36px;
+  }
+
+  .hero-notice {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 16px 22px;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+    max-width: 600px;
+  }
+  .hero-notice strong { color: #fbbf24; }
+
+  /* ── LAYOUT ── */
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 20px 60px;
+  }
+
+  /* ── SECTION HEADER ── */
+  .sec-head {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; margin-top: 52px;
+  }
+  .sec-head:first-child { margin-top: 0; }
+  .sec-icon {
+    width: 38px; height: 38px; border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .si-blue  { background: #1e50c8; }
+  .si-teal  { background: #0e7490; }
+
+  .sec-head h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 19px; font-weight: 700; color: var(--navy);
+  }
+  .sec-head p { font-size: 12px; color: var(--text-light); margin-top:2px; }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--card);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .card:hover { box-shadow: var(--shadow-lg); transition: box-shadow .2s; }
+
+  .card-head {
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .card-icon {
+    width: 38px; height: 38px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; flex-shrink: 0;
+  }
+  .card-head h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 15.5px; font-weight: 700; color: var(--navy);
+  }
+  .card-head .card-sub { font-size: 12px; color: var(--text-light); }
+
+  .card-body { padding: 20px 22px; }
+
+  /* ── GRAMMAR STEPS ── */
+  .steps { display: grid; gap: 14px; }
+
+  .step {
+    display: flex; gap: 14px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #fafaf8;
+  }
+  .step-num {
+    width: 28px; height: 28px; border-radius: 6px;
+    background: var(--navy); color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: 15px; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 1px;
+  }
+  .step-content h4 {
+    font-size: 14px; font-weight: 700; color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .step-content p {
+    font-size: 13px; color: var(--text-mid); line-height: 1.65;
+  }
+  .step-tag {
+    display: inline-block; font-size: 10.5px; font-weight: 700;
+    padding: 2px 8px; border-radius: 3px; margin-bottom: 5px;
+    letter-spacing: .5px;
+  }
+  .tag-blue   { background: var(--blue-soft); color: var(--blue); }
+  .tag-teal   { background: var(--teal-soft); color: var(--teal); }
+  .tag-amber  { background: var(--amber-soft); color: var(--amber); }
+  .tag-red    { background: var(--red-soft); color: var(--red); }
+  .tag-green  { background: var(--green-soft); color: var(--green); }
+  .tag-purple { background: var(--purple-soft); color: var(--purple); }
+
+  /* ── GRAMMAR CONCEPT BOXES ── */
+  .concept-grid { display: grid; gap: 16px; }
+
+  .concept-box {
+    border-radius: 12px;
+    border: 1.5px solid;
+    overflow: hidden;
+  }
+  .cb-blue  { border-color: #bfcfff; }
+  .cb-teal  { border-color: #a5d8e8; }
+  .cb-amber { border-color: #fcd78a; }
+  .cb-green { border-color: #86efac; }
+  .cb-purple { border-color: #c4b5fd; }
+
+  .concept-head {
+    padding: 12px 18px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .ch-blue   { background: #dbeafe; }
+  .ch-teal   { background: #cffafe; }
+  .ch-amber  { background: #fef3c7; }
+  .ch-green  { background: #dcfce7; }
+  .ch-purple { background: #ede9fe; }
+
+  .concept-head h4 {
+    font-size: 14px; font-weight: 700;
+  }
+  .ch-blue h4   { color: #1e40af; }
+  .ch-teal h4   { color: #0e7490; }
+  .ch-amber h4  { color: #92400e; }
+  .ch-green h4  { color: #14532d; }
+  .ch-purple h4 { color: #4c1d95; }
+
+  .concept-body { padding: 14px 18px; background: white; }
+  .concept-body p { font-size: 13.5px; color: var(--text-mid); margin-bottom: 10px; line-height: 1.7; }
+  .concept-body p:last-child { margin-bottom: 0; }
+
+  /* ── EXAMPLE SENTENCES ── */
+  .eg-wrap { margin-top: 10px; display: grid; gap: 8px; }
+
+  .eg-row {
+    background: #f8f8fb;
+    border-radius: 7px;
+    padding: 10px 14px;
+    font-size: 13px;
+    border: 1px solid #eeeef5;
+  }
+  .eg-row .en {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13.5px; color: var(--navy);
+    margin-bottom: 3px;
+  }
+  .eg-row .ko { font-size: 12px; color: var(--text-light); }
+  .eg-row .note { font-size: 12px; color: var(--blue); margin-top: 4px; font-weight: 600; }
+
+  .highlight { background: #fef9c3; padding: 1px 4px; border-radius: 3px; }
+  .correct { color: #15803d; font-weight: 700; }
+  .wrong   { color: #b91c1c; text-decoration: line-through; opacity:.7; }
+
+  /* ── PASSIVE vs ACTIVE TABLE ── */
+  .compare-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px; margin-top: 12px;
+    border-radius: 8px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .compare-table th {
+    background: var(--navy); color: white;
+    padding: 10px 14px; text-align: left;
+    font-size: 12px; font-weight: 600; letter-spacing: .5px;
+  }
+  .compare-table td {
+    padding: 10px 14px; border-bottom: 1px solid var(--border);
+    color: var(--text-mid); vertical-align: top;
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table tr:nth-child(even) td { background: #fafaf8; }
+  .compare-table td:first-child { font-weight: 700; color: var(--navy); white-space: nowrap; }
+
+  /* ── PARTS OF SENTENCE ── */
+  .pos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  @media(max-width:560px) { .pos-grid { grid-template-columns: 1fr; } }
+
+  .pos-item {
+    background: #fafaf8;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 12px 14px;
+  }
+  .pos-item h5 {
+    font-size: 13px; font-weight: 700; color: var(--navy);
+    margin-bottom: 4px; display: flex; align-items: center; gap: 6px;
+  }
+  .pos-dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  }
+  .pos-item p { font-size: 12.5px; color: var(--text-mid); line-height: 1.6; }
+
+  /* ── NOTICE BOX ── */
+  .notice-box {
+    border-radius: 10px; padding: 14px 18px;
+    display: flex; gap: 12px; margin-top: 14px;
+    font-size: 13.5px; line-height: 1.7;
+  }
+  .nb-amber { background: var(--amber-soft); border: 1px solid #fcd38d; color: #78350f; }
+  .nb-blue  { background: var(--blue-soft);  border: 1px solid #bfcfff; color: #1e3a8a; }
+  .nb-red   { background: var(--red-soft);   border: 1px solid #fca5a5; color: #7f1d1d; }
+  .nb-teal  { background: var(--teal-soft);  border: 1px solid #a5d8e8; color: #164e63; }
+  .nb-green { background: var(--green-soft); border: 1px solid #86efac; color: #14532d; }
+  .notice-box .nb-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+  /* ── READING SECTION ── */
+  .passage-card {
+    background: var(--card);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .passage-head {
+    padding: 14px 22px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .passage-head h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px; color: var(--navy);
+  }
+  .passage-topic {
+    font-size: 12px; color: var(--text-light);
+    background: var(--bg); padding: 3px 10px; border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .passage-text {
+    padding: 18px 22px;
+    font-size: 13.5px; color: var(--text-mid);
+    line-height: 1.85;
+    border-bottom: 1px solid var(--border);
+    background: #fdfcfb;
+    font-family: 'Noto Serif KR', serif;
+  }
+
+  .passage-analysis { padding: 18px 22px; }
+  .pa-label {
+    font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--text-light); margin-bottom: 10px;
+  }
+
+  .keyword-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .kw {
+    font-size: 12px; padding: 4px 12px; border-radius: 16px; font-weight: 600;
+    border: 1.5px solid;
+  }
+  .kw-blue   { background: var(--blue-soft); border-color: #93b4ff; color: #1e3a8a; }
+  .kw-green  { background: var(--green-soft); border-color: #86efac; color: #14532d; }
+  .kw-amber  { background: var(--amber-soft); border-color: #fcd38d; color: #78350f; }
+
+  /* ── QUESTION BOX ── */
+  .q-box {
+    background: #f8f8fb;
+    border: 1px solid #dde2f5;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+  .q-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--blue); margin-bottom: 6px; }
+  .q-text { font-size: 13.5px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+  .q-options { display: grid; gap: 6px; }
+  .q-opt {
+    font-size: 13px; color: var(--text-mid);
+    padding: 7px 12px; border-radius: 6px; border: 1px solid var(--border);
+    background: white; display: flex; gap: 8px;
+  }
+  .q-opt.answer {
+    background: var(--green-soft); border-color: #86efac; color: var(--green);
+    font-weight: 700;
+  }
+  .q-opt.answer::before { content: '✓'; }
+  .q-why {
+    margin-top: 10px; font-size: 13px; color: var(--teal);
+    background: var(--teal-soft); border-radius: 6px; padding: 8px 12px;
+    border-left: 3px solid var(--teal);
+  }
+
+  /* ── SUMMARY TABLE ── */
+  .summary-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 12px; margin-top: 14px;
+  }
+  @media(max-width:560px) { .summary-grid { grid-template-columns: 1fr; } }
+
+  .sg-item {
+    background: white; border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px 16px;
+  }
+  .sg-item h5 { font-size: 12px; font-weight: 700; color: var(--text-light); margin-bottom: 6px; letter-spacing: .5px; text-transform: uppercase; }
+  .sg-item p { font-size: 13px; color: var(--text-mid); line-height: 1.65; }
+
+  /* ── CLOSING ── */
+  .closing-card {
+    background: linear-gradient(135deg, var(--navy), #1a3a6a);
+    border-radius: 14px; padding: 30px 28px;
+    color: white; margin-top: 12px;
+  }
+  .closing-card h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 17px; font-weight: 700; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .closing-card p {
+    font-size: 13.5px; color: rgba(255,255,255,0.78); line-height: 1.8;
+  }
+  .closing-card strong { color: #fbbf24; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px; background: var(--border);
+    margin: 40px 0;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center; padding: 28px 20px;
+    border-top: 1px solid var(--border);
+    font-size: 12px; color: var(--text-light);
+    line-height: 1.8;
+  }
+
+  @media(max-width:560px) {
+    .hero { padding: 44px 18px 40px; }
+    .wrap { padding: 32px 14px 48px; }
+    .card-body, .concept-body { padding: 16px; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>HATS! (전체 문장 필사 본)</h1>
 
-        <div class="page-num">PAGE 2</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Here is a little hat for a little boy.</div>
-                <div class="kor-orig">여기 어린 소년을 위한 작은 모자가 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div>
-                    <div class="column-title">English Writing</div>
-                    <div class="trace-line">Here is a little hat for a little boy.</div>
-                    <div class="blank-line"></div>
-                </div>
-                <div>
-                    <div class="column-title">Korean Writing</div>
-                    <div class="trace-line">여기 어린 소년을 위한 작은 모자가 있습니다.</div>
-                    <div class="blank-line"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">He is dressed up.</div>
-                <div class="kor-orig">그는 멋지게 차려입었습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">He is dressed up.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">그는 멋지게 차려입었습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Will he go to a party?</div>
-                <div class="kor-orig">그는 파티에 갈까요?</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Will he go to a party?</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">그는 파티에 갈까요?</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 3</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Here is a hat for wearing on the beach.</div>
-                <div class="kor-orig">여기 해변에서 쓰는 모자가 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Here is a hat for wearing on the beach.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">여기 해변에서 쓰는 모자가 있습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">It keeps off the sun to stop it from burning.</div>
-                <div class="kor-orig">이것은 햇볕을 막아 피부가 타는 것을 방지해 줍니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">It keeps off the sun to stop it from burning.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">이것은 햇볕을 막아 피부가 타는 것을 방지해 줍니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 4</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Here are hats for holidays.</div>
-                <div class="kor-orig">여기 휴가 때 쓰는 모자들이 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Here are hats for holidays.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">여기 휴가 때 쓰는 모자들이 있습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">It is a good idea to take a hat if you travel.</div>
-                <div class="kor-orig">여행을 간다면 모자를 챙기는 것이 좋습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">It is a good idea to take a hat if you travel.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">여행을 간다면 모자를 챙기는 것이 좋습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 5</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">A fur hat for the winter!</div>
-                <div class="kor-orig">겨울을 위한 털모자!</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">A fur hat for the winter!</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">겨울을 위한 털모자!</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">In the cold, a fur hat traps in heat and keeps you warm.</div>
-                <div class="kor-orig">추울 때 털모자는 열을 가두어 당신을 따뜻하게 유지해 줍니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">In the cold, a fur hat traps in heat and keeps you warm.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">추울 때 털모자는 열을 가두어 당신을 따뜻하게 유지해 줍니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 6</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">This is an old hat.</div>
-                <div class="kor-orig">이것은 오래된 모자입니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">This is an old hat.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">이것은 오래된 모자입니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Men used to wear hats like this for big events.</div>
-                <div class="kor-orig">남자들은 큰 행사가 있을 때 이런 모자를 쓰곤 했습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Men used to wear hats like this for big events.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">남자들은 큰 행사가 있을 때 이런 모자를 쓰곤 했습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 7</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">This little boy is pretending to be a chef.</div>
-                <div class="kor-orig">이 어린 소년은 요리사 흉내를 내고 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">This little boy is pretending to be a chef.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">이 어린 소년은 요리사 흉내를 내고 있습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">A chef makes food. They wear hats like this.</div>
-                <div class="kor-orig">요리사는 음식을 만듭니다. 그들은 이런 모자를 씁니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">A chef makes food. They wear hats like this.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">요리사는 음식을 만듭니다. 그들은 이런 모자를 씁니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 8</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Here is a straw hat for taking care of the garden.</div>
-                <div class="kor-orig">여기 정원을 돌볼 때 쓰는 밀짚모자가 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Here is a straw hat for taking care of the garden.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">여기 정원을 돌볼 때 쓰는 밀짚모자가 있습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">A straw hat keeps you cool and keeps the sun off.</div>
-                <div class="kor-orig">밀짚모자는 당신을 시원하게 해주고 햇볕을 막아줍니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">A straw hat keeps you cool and keeps the sun off.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">밀짚모자는 당신을 시원하게 해주고 햇볕을 막아줍니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 9</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Here are some hard hats for keeping them safe.</div>
-                <div class="kor-orig">여기 안전을 지켜주는 안전모들이 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Here are some hard hats for keeping them safe.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">여기 안전을 지켜주는 안전모들이 있습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Hard hats can save you from a bump.</div>
-                <div class="kor-orig">안전모는 부딪힘으로부터 당신을 보호해 줄 수 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Hard hats can save you from a bump.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">안전모는 부딪힘으로부터 당신을 보호해 줄 수 있습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 10</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Look at these hats up in the air.</div>
-                <div class="kor-orig">공중에 떠 있는 이 모자들을 보세요.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Look at these hats up in the air.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">공중에 떠 있는 이 모자들을 보세요.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">They throw the hat to show that they are finished study.</div>
-                <div class="kor-orig">그들은 공부를 마쳤음을 보여주기 위해 모자를 던집니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">They throw the hat to show that they are finished study.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">그들은 공부를 마쳤음을 보여주기 위해 모자를 던집니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="page-num">PAGE 11</div>
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Men and women who fight fires need a hard hat.</div>
-                <div class="kor-orig">불과 싸우는 남녀 소방관들은 안전모가 필요합니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Men and women who fight fires need a hard hat.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">불과 싸우는 남녀 소방관들은 안전모가 필요합니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">It is good to bring a hat if you go hiking on a trail.</div>
-                <div class="kor-orig">오솔길로 하이킹을 간다면 모자를 가져가는 것이 좋습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">It is good to bring a hat if you go hiking on a trail.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">오솔길로 하이킹을 간다면 모자를 가져가는 것이 좋습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">There are a lot of different hats that do a lot of different jobs.</div>
-                <div class="kor-orig">다양한 역할을 하는 수많은 종류의 모자들이 있습니다.</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">There are a lot of different hats that do a lot of different jobs.</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">다양한 역할을 하는 수많은 종류의 모자들이 있습니다.</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
-        <div class="sentence-group">
-            <div class="original-box">
-                <div class="eng-orig">Do you need a hat today?</div>
-                <div class="kor-orig">오늘 당신은 모자가 필요한가요?</div>
-            </div>
-            <div class="writing-section">
-                <div><div class="trace-line">Do you need a hat today?</div><div class="blank-line"></div></div>
-                <div><div class="trace-line">오늘 당신은 모자가 필요한가요?</div><div class="blank-line"></div></div>
-            </div>
-        </div>
-
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="badge badge-gold">2026 · 1학기</span>
+      <span class="badge badge-white">가온중학교 2학년 · 영어</span>
     </div>
+    <h1>기말고사 대비<br>학부모 안내 자료</h1>
+    <p class="hero-sub">어법 집중 학습 전략 및 내용 이해 대비 가이드</p>
+    <div class="hero-notice">
+      이번 기말 시험의 핵심은 <strong>수동태 · 관계대명사</strong>입니다.<br>
+      두 어법 모두 고등 영어에서도 핵심적으로 다루는 내용으로,
+      <strong>문장의 구조를 이해하는 힘</strong>을 기르는 것이 중요합니다.
+      중간고사에서 확인된 어법 오답 유형도 누적 점검이 필요합니다.
+    </div>
+  </div>
+</div>
 
-</body></html>
+<div class="wrap">
+
+  <!-- ══════════════════════════════
+       PART 1 : 어법 대비
+  ══════════════════════════════ -->
+  <div class="sec-head">
+    <div class="sec-icon si-blue">⚙️</div>
+    <div>
+      <h2>Part 1 — 어법 집중 대비</h2>
+      <p>수동태 · 관계대명사 · 문장 성분 이해 전략</p>
+    </div>
+  </div>
+
+  <!-- 학습 전략 5단계 -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon" style="background:#ede9fe;">📋</div>
+      <div>
+        <h3>어법 학습 5단계 전략</h3>
+        <p class="card-sub">수동태와 관계사절은 모두 문장 형식 이해에서 시작됩니다</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <span class="step-tag tag-blue">핵심 기초</span>
+            <h4>문장 성분을 알고 구분할 수 있는가</h4>
+            <p>주어 · 동사 · 목적어 · 보어 · 수식어를 문장 안에서 정확히 짚어내는 능력이
+              수동태와 관계대명사 이해의 출발점입니다. 주어가 무엇인지 모르면
+              능동/수동 판단도, 관계사절이 무엇을 꾸미는지도 알 수 없습니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <span class="step-tag tag-teal">구조 이해</span>
+            <h4>후치 수식에 대해 이해하고 있는가</h4>
+            <p>영어는 수식어가 명사 <strong>뒤에서</strong> 꾸미는 경우가 많습니다.
+              관계사절도 이 '후치 수식'의 대표 예입니다.
+              <em>the book that I bought yesterday</em>처럼 명사 뒤에 절이 붙는 패턴을
+              반복 훈련해야 합니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <span class="step-tag tag-amber">형식 이해</span>
+            <h4>3 / 4 / 5형식별 특징 이해</h4>
+            <p>동사의 형식에 따라 목적어·보어 유무가 달라지고,
+              이것이 수동태 전환 가능 여부와 직접 연결됩니다.
+              목적어가 없는 1·2형식은 수동태를 만들 수 없습니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <span class="step-tag tag-green">반복 훈련</span>
+            <h4>반복적인 Writing 연습</h4>
+            <p>어법은 눈으로 읽어서 아는 것과 직접 쓸 수 있는 것 사이에 큰 차이가 있습니다.
+              능동→수동 전환, 두 문장을 관계사로 연결하는 쓰기 연습을 매일 꾸준히 해야 합니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <span class="step-tag tag-red">오답 분석</span>
+            <h4>어법 문제 오답 유형 숙지</h4>
+            <p>중간고사에서 나온 '형용사 vs 부사', '간접의문문 어순', '수 일치' 오류처럼
+              어법 실수는 유형이 반복됩니다. 오답 노트로 자신의 실수 패턴을 파악하고
+              같은 유형의 문제를 반복 풀어야 합니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice-box nb-amber" style="margin-top:18px;">
+        <span class="nb-icon">💡</span>
+        <span>능수동태, 관계사절, 비교구문, 가정법은 모두 <strong>문장의 형식에 대한 이해</strong>를 공통 기반으로 합니다.
+        그 중에서도 능수동태와 관계사절은 고등 독해에서도 매우 중요하므로 기말 시험을 충분히 준비하는 것이 중요합니다.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 문장 성분 이해 -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon" style="background:#dbeafe;">🔍</div>
+      <div>
+        <h3>① 문장 성분 이해 — 어법의 근본</h3>
+        <p class="card-sub">수동태·관계사 모두 여기서 시작됩니다</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <p style="font-size:13.5px; color:var(--text-mid); margin-bottom:16px; line-height:1.75;">
+        영어 문장은 크게 5가지 성분으로 이루어집니다. 이 성분들을 정확히 파악해야
+        수동태를 만들 수 있고, 관계사가 어떤 명사를 꾸미는지 알 수 있습니다.
+      </p>
+      <div class="pos-grid">
+        <div class="pos-item">
+          <h5><span class="pos-dot" style="background:#1e50c8;"></span>주어 (Subject)</h5>
+          <p>문장의 행위자 또는 상태의 주체.<br>
+          <em style="color:var(--navy);">The cook</em> created the sandwich.<br>
+          수동태에서는 목적어가 주어 자리로 이동합니다.</p>
+        </div>
+        <div class="pos-item">
+          <h5><span class="pos-dot" style="background:#0e7490;"></span>동사 (Verb)</h5>
+          <p>행위·상태를 나타내는 핵심 성분.<br>
+          형식(1~5형식)을 결정하며, 수동태는 <em style="color:var(--navy);">be + p.p.</em> 형태로 바뀝니다.</p>
+        </div>
+        <div class="pos-item">
+          <h5><span class="pos-dot" style="background:#d97706;"></span>목적어 (Object)</h5>
+          <p>동사의 대상. <strong>목적어가 있어야</strong> 수동태를 만들 수 있습니다.<br>
+          <em style="color:var(--navy);">He invented matches.</em> → matches가 목적어</p>
+        </div>
+        <div class="pos-item">
+          <h5><span class="pos-dot" style="background:#6d28d9;"></span>보어 (Complement)</h5>
+          <p>주어나 목적어의 상태를 보충 설명.<br>
+          5형식에서는 목적격 보어 자리에 <strong>반드시 형용사</strong>가 옵니다.<br>
+          <em style="color:var(--red);">×sadly</em> → <em style="color:var(--green);">○sad</em></p>
+        </div>
+        <div class="pos-item" style="grid-column: span 1;">
+          <h5><span class="pos-dot" style="background:#15803d;"></span>수식어 (Modifier)</h5>
+          <p>명사·동사를 꾸미는 성분(형용사, 부사, 전치사구, 관계사절 등).<br>
+          영어는 수식어가 <strong>명사 뒤에 위치</strong>하는 '후치 수식'이 많습니다.</p>
+        </div>
+      </div>
+
+      <div class="eg-wrap" style="margin-top:16px;">
+        <div class="eg-row">
+          <div class="en"><span style="color:var(--blue); font-weight:700;">[주어]</span> The cook
+            <span style="color:var(--teal); font-weight:700;">[동사]</span> created
+            <span style="color:var(--amber); font-weight:700;">[목적어]</span> the first sandwich
+            <span style="color:var(--green); font-weight:700;">[수식어]</span> in London in 1762.</div>
+          <div class="ko">요리사가 1762년 런던에서 최초의 샌드위치를 만들었다.</div>
+          <div class="note">→ 수동태: The first sandwich was created by the cook in London in 1762.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 수동태 -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon" style="background:#cffafe;">🔄</div>
+      <div>
+        <h3>② 수동태 — 어법 규칙으로 이해하기</h3>
+        <p class="card-sub">한국어 해석이 아닌 문법 구조로 판단해야 합니다</p>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="notice-box nb-red" style="margin-bottom:18px;">
+        <span class="nb-icon">⚠️</span>
+        <span>가장 흔한 실수: 한국어로 "~되다 / ~당하다"라고 해석되면 수동태라고 생각합니다.
+        하지만 이 방법은 틀릴 때가 많습니다. <strong>어법 규칙으로 판단하는 훈련</strong>이 반드시 필요합니다.</span>
+      </div>
+
+      <div class="concept-grid">
+
+        <div class="concept-box cb-teal">
+          <div class="concept-head ch-teal">
+            <span>📐</span>
+            <h4>수동태 만드는 규칙</h4>
+          </div>
+          <div class="concept-body">
+            <p><strong>① 목적어가 있는 문장만</strong> 수동태를 만들 수 있습니다.<br>
+            자동사(go, arrive, happen 등)는 수동태 불가.</p>
+            <p><strong>② 형태:</strong> <code style="background:#e0f5f9; padding:2px 6px; border-radius:4px; font-size:12.5px;">be동사 + 과거분사(p.p.)</code></p>
+            <p><strong>③ 행위자 표시:</strong> <code style="background:#e0f5f9; padding:2px 6px; border-radius:4px; font-size:12.5px;">by + 행위자</code> (생략 가능)</p>
+            <div class="eg-wrap">
+              <div class="eg-row">
+                <div class="en">능동: John Walker <span class="highlight">invented</span> matches.</div>
+                <div class="ko">존 워커가 성냥을 발명했다.</div>
+              </div>
+              <div class="eg-row">
+                <div class="en">수동: Matches <span class="highlight">were invented</span> by John Walker.</div>
+                <div class="ko">성냥은 존 워커에 의해 발명되었다.</div>
+                <div class="note">목적어 matches → 수동태의 주어로 이동</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept-box cb-amber">
+          <div class="concept-head ch-amber">
+            <span>⚡</span>
+            <h4>능동 vs 수동 — 판단 기준</h4>
+          </div>
+          <div class="concept-body">
+            <p><strong>핵심 질문:</strong> 주어가 행위를 <em>하는</em> 쪽인가, <em>당하는</em> 쪽인가?</p>
+            <table class="compare-table">
+              <thead><tr><th>구분</th><th>주어의 역할</th><th>형태</th></tr></thead>
+              <tbody>
+                <tr><td>능동태</td><td>행위를 직접 함</td><td>동사 원형 활용</td></tr>
+                <tr><td>수동태</td><td>행위를 당함·받음</td><td>be + p.p.</td></tr>
+              </tbody>
+            </table>
+            <div class="eg-wrap" style="margin-top:10px;">
+              <div class="eg-row">
+                <div class="en"><span class="correct">○</span> Willis Carrier <span class="highlight">set up</span> a cooling system.</div>
+                <div class="ko">Carrier가 냉방 시스템을 설치했다. (주어=행위자 → 능동)</div>
+              </div>
+              <div class="eg-row">
+                <div class="en"><span class="correct">○</span> A cooling system <span class="highlight">was set up</span> by Carrier.</div>
+                <div class="ko">냉방 시스템이 설치되었다. (주어=행위 대상 → 수동)</div>
+              </div>
+              <div class="eg-row">
+                <div class="en"><span class="wrong">✗</span> A cooling system <span class="wrong">set up</span> by Carrier.</div>
+                <div class="ko">오류: be동사 없이 p.p.만 사용 → 수동태 형태 불완전</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept-box cb-blue">
+          <div class="concept-head ch-blue">
+            <span>📝</span>
+            <h4>시제별 수동태 형태</h4>
+          </div>
+          <div class="concept-body">
+            <table class="compare-table">
+              <thead><tr><th>시제</th><th>형태</th><th>예문</th></tr></thead>
+              <tbody>
+                <tr><td>현재</td><td>am/is/are + p.p.</td><td>It <em>is used</em> every day.</td></tr>
+                <tr><td>과거</td><td>was/were + p.p.</td><td>It <em>was invented</em> in 1826.</td></tr>
+                <tr><td>현재완료</td><td>have/has been + p.p.</td><td>It <em>has been used</em> for years.</td></tr>
+                <tr><td>미래</td><td>will be + p.p.</td><td>It <em>will be made</em> soon.</td></tr>
+              </tbody>
+            </table>
+            <div class="notice-box nb-blue" style="margin-top:10px; padding:10px 14px;">
+              <span class="nb-icon">💬</span>
+              <span style="font-size:12.5px;">시제 파악 → be동사의 시제로 표현, p.p.는 변하지 않습니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept-box cb-green">
+          <div class="concept-head ch-green">
+            <span>🎯</span>
+            <h4>지문에서 찾는 수동태 연습</h4>
+          </div>
+          <div class="concept-body">
+            <p>교과서 지문 속 수동태를 직접 찾고 분석하는 연습이 효과적입니다.</p>
+            <div class="eg-wrap">
+              <div class="eg-row">
+                <div class="en">Matches <span class="highlight">were invented</span> by John Walker.</div>
+                <div class="note">과거 수동태 | 주어(Matches) = 발명 당한 대상</div>
+              </div>
+              <div class="eg-row">
+                <div class="en">The first air conditioner <span class="highlight">was invented</span> to protect paper.</div>
+                <div class="note">과거 수동태 | by절 생략 (행위자 불명확)</div>
+              </div>
+              <div class="eg-row">
+                <div class="en">The present-day sandwich is the result of many chefs' work.</div>
+                <div class="note">수동태가 아닌 문장 — 혼동 주의! (is = 2형식 동사)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /concept-grid -->
+    </div>
+  </div>
+
+  <!-- 관계대명사 -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon" style="background:#ede9fe;">🔗</div>
+      <div>
+        <h3>③ 관계대명사 — 후치 수식과 격 이해</h3>
+        <p class="card-sub">선행사 + 관계사절의 구조를 한 눈에 파악해야 합니다</p>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="concept-grid">
+
+        <div class="concept-box cb-purple">
+          <div class="concept-head ch-purple">
+            <span>🧩</span>
+            <h4>관계대명사란?</h4>
+          </div>
+          <div class="concept-body">
+            <p>두 문장을 하나로 연결하면서, 앞에 나온 명사(선행사)를 뒤에서 꾸미는 절을 이끕니다.</p>
+            <div class="eg-wrap">
+              <div class="eg-row">
+                <div class="en">① I know a man. + ② The man invented matches.</div>
+                <div class="ko">나는 한 남자를 안다. + 그 남자는 성냥을 발명했다.</div>
+              </div>
+              <div class="eg-row">
+                <div class="en">→ I know a man <span class="highlight">who invented matches</span>.</div>
+                <div class="ko">나는 성냥을 발명한 남자를 안다.</div>
+                <div class="note">선행사: a man (사람) | 관계사: who (주격)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept-box cb-blue">
+          <div class="concept-head ch-blue">
+            <span>📊</span>
+            <h4>격에 따른 관계대명사 선택</h4>
+          </div>
+          <div class="concept-body">
+            <table class="compare-table">
+              <thead><tr><th>선행사</th><th>주격</th><th>목적격</th><th>소유격</th></tr></thead>
+              <tbody>
+                <tr><td>사람</td><td>who</td><td>whom/who</td><td>whose</td></tr>
+                <tr><td>사물·동물</td><td>which</td><td>which</td><td>whose</td></tr>
+                <tr><td>사람·사물</td><td>that</td><td>that</td><td>—</td></tr>
+              </tbody>
+            </table>
+            <div class="notice-box nb-amber" style="margin-top:10px; padding:9px 13px;">
+              <span class="nb-icon">⚠️</span>
+              <span style="font-size:12.5px;">목적격 관계대명사는 생략 가능. 선행사가 사람이면 who/that, 사물이면 which/that.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept-box cb-teal">
+          <div class="concept-head ch-teal">
+            <span>⚖️</span>
+            <h4>수 일치 — 선행사에 동사를 맞춰라</h4>
+          </div>
+          <div class="concept-body">
+            <p>관계사절 안의 동사는 <strong>선행사의 수</strong>에 일치시켜야 합니다.</p>
+            <div class="eg-wrap">
+              <div class="eg-row">
+                <div class="en">The workers who <span class="correct">work</span> in the plant feel the cool air.</div>
+                <div class="note">선행사 the workers (복수) → work (복수 동사)</div>
+              </div>
+              <div class="eg-row">
+                <div class="en">The engineer who <span class="correct">sets up</span> the system is smart.</div>
+                <div class="note">선행사 the engineer (단수) → sets up (단수 동사)</div>
+              </div>
+              <div class="eg-row">
+                <div class="en"><span class="wrong">✗</span> The people who <span class="wrong">is</span> standing there…</div>
+                <div class="en"><span class="correct">○</span> The people who <span class="correct">are</span> standing there…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept-box cb-green">
+          <div class="concept-head ch-green">
+            <span>✂️</span>
+            <h4>목적격 관계대명사 생략</h4>
+          </div>
+          <div class="concept-body">
+            <p>목적격 관계대명사는 생략해도 문장이 성립합니다. 생략된 관계사를 찾아내는 것도 시험에 출제됩니다.</p>
+            <div class="eg-wrap">
+              <div class="eg-row">
+                <div class="en">The sandwich <span class="highlight">(that/which)</span> the cook made had two pieces of bread.</div>
+                <div class="ko">그 요리사가 만든 샌드위치는 두 조각의 빵으로 되어 있었다.</div>
+                <div class="note">목적격 that/which 생략 가능 — 괄호 안이 생략된 형태</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="notice-box nb-teal" style="margin-top:4px;">
+        <span class="nb-icon">📌</span>
+        <span>어법 문제는 누적이 중요합니다. 중간에 출제된 <strong>시제·병렬 구조·수 일치</strong>는 기말에도 반복 출제될 수 있으므로, 오답 유형을 지속적으로 점검해야 합니다.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════
+       PART 2 : 내용 이해 대비
+  ══════════════════════════════ -->
+  <div class="sec-head">
+    <div class="sec-icon si-teal">📖</div>
+    <div>
+      <h2>Part 2 — 내용 이해 대비</h2>
+      <p>시험 범위 지문 완전 이해 + 대의파악 문제 유형별 접근법</p>
+    </div>
+  </div>
+
+  <div class="notice-box nb-blue" style="margin-bottom:24px;">
+    <span class="nb-icon">📌</span>
+    <span>내용 이해 문제는 <strong>지문의 핵심 흐름과 목적</strong>을 파악하는 것이 핵심입니다.
+    각 문제 유형(주제·제목·요지·빈칸·일치·불일치)마다 접근 방법이 다르므로,
+    유형별 전략을 익혀야 합니다.</span>
+  </div>
+
+  <!-- 지문 1: Sandwich -->
+  <div class="passage-card">
+    <div class="passage-head">
+      <h3>Sandwich</h3>
+      <span class="passage-topic">주제 문항 대비</span>
+    </div>
+    <div class="passage-text">
+      The Earl of Sandwich, a nobleman in England, loved playing cards in 1762. The game lasted a very long time, so players stayed at the table for hours. As a result, the Earl didn't have enough time to eat. Surprisingly, this made dining difficult. Why? In those days, people ate formal meals with forks, but the Earl didn't want to stop his game for dinner. People needed a new way to eat, and the Earl's cook created the first sandwich in London in 1762. The cook's meal had two pieces of bread but no plate. How did he eat it without a plate? Well, the Earl simply held the meat between the bread with his hands. The present-day sandwich is the result of many chefs' work in the following centuries.
+    </div>
+    <div class="passage-analysis">
+      <div class="pa-label">지문 핵심 분석</div>
+      <div class="keyword-row">
+        <span class="kw kw-blue">발단: 카드 게임으로 식사 불가</span>
+        <span class="kw kw-amber">전개: 포크 없이 먹는 방법 필요</span>
+        <span class="kw kw-green">결론: 샌드위치 탄생 → 현재까지</span>
+      </div>
+      <div class="summary-grid">
+        <div class="sg-item">
+          <h5>글의 핵심 주제</h5>
+          <p>카드 게임에서 비롯된 샌드위치의 역사적 기원. 글 전체가 '샌드위치가 어떻게 생겨났는가'를 설명합니다.</p>
+        </div>
+        <div class="sg-item">
+          <h5>오답 함정 포인트</h5>
+          <p>② 귀족의 사회적 지위, ③ 포크 사용법, ④ 카드 게임의 부정적 영향 — 모두 지문에 언급은 되지만 <strong>핵심 주제가 아닙니다.</strong></p>
+        </div>
+      </div>
+      <div class="q-box">
+        <div class="q-label">문제 1 — 주제 고르기</div>
+        <div class="q-text">다음 글의 주제로 가장 적절한 것은?</div>
+        <div class="q-options">
+          <div class="q-opt answer">① The historical origin of the sandwich</div>
+          <div class="q-opt">② The social status of noblemen in England</div>
+          <div class="q-opt">③ Various ways to use forks during dinner</div>
+          <div class="q-opt">④ The negative effects of playing cards too long</div>
+          <div class="q-opt">⑤ Famous recipes for traditional British bread</div>
+        </div>
+        <div class="q-why">
+          ✓ 정답 ① — 글 전체가 샌드위치 탄생의 배경(카드 게임 → 식사 불편 → 새로운 방식)을 순서대로 설명합니다.
+          주제 문항은 <strong>처음과 끝 문장</strong>을 특히 주목하세요. 첫 문장의 "Earl of Sandwich"와 마지막 문장의 "The present-day sandwich"가 글 전체를 감쌉니다.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 지문 2: Matches -->
+  <div class="passage-card">
+    <div class="passage-head">
+      <h3>Matches</h3>
+      <span class="passage-topic">제목 문항 대비</span>
+    </div>
+    <div class="passage-text">
+      Matches were invented by John Walker. In 1826, Walker was working at a pharmacy in Durham, England. At that time, people had to use heavy stones to create a fire when they wanted to light a lamp. Walker was a curious chemist, so he needed a solution. One day, Walker saw some dried chemicals on a stick. When he scraped the stick, he started a fire by simply rubbing it against the floor. The next day, he made his own friction matches and used them to light his stove quickly. Surprisingly, it worked perfectly! Soon, everybody in the town began using them.
+    </div>
+    <div class="passage-analysis">
+      <div class="pa-label">지문 핵심 분석</div>
+      <div class="keyword-row">
+        <span class="kw kw-blue">문제: 불 피우기 어려움</span>
+        <span class="kw kw-amber">계기: 우연히 화학물질 긁음</span>
+        <span class="kw kw-green">결과: 성냥 발명 → 마을 전파</span>
+      </div>
+      <div class="summary-grid">
+        <div class="sg-item">
+          <h5>글의 핵심</h5>
+          <p>우연한 발견(화학물질 긁기)이 위대한 발명(성냥)으로 이어진 이야기. 글의 흐름이 '우연 → 발명'입니다.</p>
+        </div>
+        <div class="sg-item">
+          <h5>제목 vs 주제 차이</h5>
+          <p>제목은 <strong>흥미롭고 함축적인 표현</strong>을 씁니다. "A Simple Accident Leads to a Great Invention"처럼 핵심 흐름을 짧게 담아야 합니다.</p>
+        </div>
+      </div>
+      <div class="q-box">
+        <div class="q-label">문제 2 — 제목 고르기</div>
+        <div class="q-text">다음 글의 제목으로 가장 적절한 것은?</div>
+        <div class="q-options">
+          <div class="q-opt">① Why Heavy Stones Were Used for Fire</div>
+          <div class="q-opt answer">② A Simple Accident Leads to a Great Invention</div>
+          <div class="q-opt">③ The Difficulty of Working as a Chemist</div>
+          <div class="q-opt">④ How to Light a Lamp Without Matches</div>
+          <div class="q-opt">⑤ The Popularity of Pharmacies in England</div>
+        </div>
+        <div class="q-why">
+          ✓ 정답 ② — "scraped the stick" (우연한 행동) → 성냥 발명이라는 흐름을 가장 잘 함축합니다.
+          ①은 부분적 내용, ③④⑤는 지문의 핵심과 무관하거나 반대 방향입니다.
+          <strong>제목 문항 전략:</strong> 지문의 처음과 끝을 보고, 전체 흐름을 한 줄로 요약하는 선지를 고르세요.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 지문 3: Air Conditioning -->
+  <div class="passage-card">
+    <div class="passage-head">
+      <h3>Air Conditioning</h3>
+      <span class="passage-topic">요지 문항 대비</span>
+    </div>
+    <div class="passage-text">
+      The first air conditioner was invented to protect paper. In 1902, Willis Carrier was working at a printing plant in New York. To print better, they needed dry air. However, there was too much humidity in the building. So, they had to deal with many disappointing prints on the wrinkled paper. As a solution, the young engineer set up a cooling system in front of the printing press. The machine blew air over cold pipes many times a minute. With special fans, all the workers in the plant could feel the cool air in their workspace. No more disappointing prints!
+    </div>
+    <div class="passage-analysis">
+      <div class="pa-label">지문 핵심 분석</div>
+      <div class="keyword-row">
+        <span class="kw kw-blue">문제: 습기로 인쇄물 망가짐</span>
+        <span class="kw kw-amber">해결: 냉각 시스템 설치</span>
+        <span class="kw kw-green">결론: 종이 보호 목적으로 에어컨 탄생</span>
+      </div>
+      <div class="summary-grid">
+        <div class="sg-item">
+          <h5>요지 = 글쓴이의 주장</h5>
+          <p>요지는 "글쓴이가 가장 말하고 싶은 것"입니다. 첫 문장 <em>"invented to protect paper"</em>가 핵심을 이미 담고 있습니다.</p>
+        </div>
+        <div class="sg-item">
+          <h5>요지 vs 주제 차이</h5>
+          <p>주제는 <strong>무엇에 관한 글인가</strong>, 요지는 <strong>그 글에서 말하려는 핵심 내용</strong>입니다. 에어컨의 최초 목적이 핵심입니다.</p>
+        </div>
+      </div>
+      <div class="q-box">
+        <div class="q-label">문제 3 — 요지 고르기</div>
+        <div class="q-text">다음 글의 요지로 가장 적절한 것은?</div>
+        <div class="q-options">
+          <div class="q-opt">① 습도는 인쇄물의 품질을 결정하는 가장 중요한 요소이다.</div>
+          <div class="q-opt answer">② 에어컨은 처음에는 사람이 아닌 종이를 위해 발명되었다.</div>
+          <div class="q-opt">③ 냉방 시스템의 발전은 근로 환경 개선을 위해 시작되었다.</div>
+          <div class="q-opt">④ 뉴욕의 인쇄 공장은 초기 에어컨 기술의 핵심적인 역할을 했다.</div>
+          <div class="q-opt">⑤ 기술적 문제는 종종 예상치 못한 발명가에 의해 해결되곤 한다.</div>
+        </div>
+        <div class="q-why">
+          ✓ 정답 ② — 첫 문장("to protect paper")과 마지막("No more disappointing prints")이 모두 <strong>종이 보호</strong>를 강조합니다.
+          ③은 근로환경 개선이라 했지만 지문의 목적은 종이(인쇄)입니다. ①④⑤는 세부 내용 또는 추론의 과도한 비약.
+          <strong>요지 문항 전략:</strong> 첫 문장과 마지막 문장을 먼저 읽고, 반복되는 핵심 단어를 찾으세요.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 유형별 전략 정리 -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon" style="background:#fef3c7;">🎯</div>
+      <div>
+        <h3>대의파악 문제 유형별 전략 요약</h3>
+        <p class="card-sub">유형을 파악하면 어디를 먼저 읽어야 할지가 보입니다</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num" style="background:#1e50c8;">主</div>
+          <div class="step-content">
+            <span class="step-tag tag-blue">주제 문항</span>
+            <h4>글이 무엇에 대한 것인가?</h4>
+            <p>첫 문장과 마지막 문장을 먼저 읽습니다. 글 전체를 아우르는 명사구(키워드)를 찾으세요. 구체적 사례는 주제가 아닌 '근거'입니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:#0e7490;">題</div>
+          <div class="step-content">
+            <span class="step-tag tag-teal">제목 문항</span>
+            <h4>글의 흐름을 함축적으로 표현한 것은?</h4>
+            <p>흥미로운 표현이나 역설적 표현이 제목이 되는 경우가 많습니다. 글의 전환점(but, however, so 이후)을 핵심으로 보세요.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:#d97706;">旨</div>
+          <div class="step-content">
+            <span class="step-tag tag-amber">요지 문항</span>
+            <h4>글쓴이가 가장 말하고 싶은 것은?</h4>
+            <p>주제보다 구체적인 '주장'을 찾습니다. 첫 문장이 요지를 직접 담는 경우가 많습니다. 반복되는 핵심 단어에 집중하세요.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:#6d28d9;">빈</div>
+          <div class="step-content">
+            <span class="step-tag tag-purple">빈칸 문항</span>
+            <h4>문맥상 가장 자연스러운 말은?</h4>
+            <p>빈칸 앞뒤 문장을 반드시 읽습니다. 글의 전체 흐름과 일치하는지 확인하고, 너무 구체적이거나 너무 추상적인 선지는 제거하세요.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 마무리 -->
+  <div class="closing-card">
+    <h3>📌 학부모님께 드리는 말씀</h3>
+    <p>
+      기말고사 범위인 <strong>수동태와 관계대명사</strong>는 중학교 어법 중 가장 구조적인 이해를 필요로 하는 부분으로,
+      단순 암기보다는 <strong>문장 성분을 분석하는 습관</strong>을 길러주는 것이 장기적으로 훨씬 효과적입니다.
+      중간고사에서 확인된 시제·수 일치·형용사/부사 구분 등의 오류도 <strong>누적 점검</strong>이 반드시 필요합니다.<br><br>
+      내용 이해 영역은 시험 범위의 지문을 <strong>반복 정독하고 각 단락의 핵심을 한 줄로 요약</strong>하는 연습이
+      가장 효과적입니다. 문제 유형별 접근법을 익혀두면 낯선 지문에서도 빠르게 정답을 찾을 수 있습니다.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  본 자료는 가온중학교 2학년 기말고사 대비 학부모 안내용으로 제작되었습니다.<br>
+  예시 문항은 교육적 이해를 돕기 위해 구성된 것으로, 실제 시험 문항과 다를 수 있습니다.
+</footer>
+
+</body>
+</html>
